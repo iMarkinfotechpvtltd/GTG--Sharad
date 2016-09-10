@@ -1,0 +1,14 @@
+DB details
+
+DB name:imarkcli_gtg
+user:imarkgt
+password:im@rk123#@
+
+
+Database name :	db644090580
+User name :	dbo644090580
+password: im@rk123#@
+Host name :	localhost
+Port :	3306
+Description :	gtg
+Version :	MySQL5.5
