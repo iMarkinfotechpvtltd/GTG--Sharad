@@ -107,9 +107,11 @@ select::-ms-expand {
 
 /*=================*/
 
+
+/*
 .container {
     width: 1370px;
-}
+}*/
 
 header.home-header {
     background: #000;
@@ -897,6 +899,7 @@ nav ul li a.get-quote:focus {
 .newsletter-sub input:focus {
     border: 1px solid rgba(255, 255, 255, 1);
     background: none;
+    color: #dbdbdb;
 }
 
 .newsletter-sub input.cls_submit_btn {
@@ -1114,15 +1117,19 @@ ul.social li a:focus {
     font-size: 24px;
     font-weight: 600;
     margin: 0 0 10px;
+    padding: 0 0 0 20px;
+    position: relative;
 }
 
 .faq h2:before {
     content: "";
     background: #626262;
     display: inline-block;
-    width: 7px;
     height: 19px;
-    margin: 0 20px 0 0;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 7px;
 }
 
 .faq p {
@@ -1256,6 +1263,27 @@ ul.social li a:focus {
     float: left;
     font-size: 15px;
     margin: 2px 10px 0 0;
+}
+
+.contact-form input.input-text {
+    border: 1px solid #213452;
+    font-size: 16px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.contact-form label.error {
+    display: none !important;
+}
+
+.input-text.error {
+    border: 1px solid hsl(0, 100%, 50%) !important;
+}
+
+#loading {
+    position: relative;
 }
 
 
@@ -1615,11 +1643,17 @@ ul.social li a:focus {
     width: 95.5%;
 }
 
-.blog-left .older-post {
+.blog-left .load_more_btn.older-post {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
     color: #4f4f4f;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
 }
 
@@ -1752,6 +1786,14 @@ ul.social li a:focus {
 .b-categories ul li a:hover,
 .b-categories ul li a:focus {
     color: #112547 !important;
+}
+
+#loader {
+    bottom: -64px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
 }
 
 
@@ -2161,6 +2203,7 @@ table.prdct_tbl {
     border-top: 1px solid #959595;
     margin: 20px 0 30px;
     width: 100%;
+    border-left: 0 none;
 }
 
 .options {}
@@ -2334,10 +2377,12 @@ table.prdct_tbl {
     padding: 0 15px;
     width: 100%;
 }
+
 .combo > input {
-       width: 85px !important;
+    width: 85px !important;
     height: 30px !important;
 }
+
 #myModal textarea {
     height: 80px;
     padding: 10px 15px;
@@ -2405,7 +2450,7 @@ table.prdct_tbl {
 
 /*================ Responsive CSS =================*/
 
-@media (max-width:1400px) {
+@media (min-width:1200px) {
     .container {
         width: 1170px;
     }
@@ -2705,5 +2750,979 @@ table.prdct_tbl {
     .product_description {
         background: #f8f8f8 none repeat scroll 0 0;
         padding: 65px 0 0;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    p {
+        font-size: 14px !important;
+        line-height: 22px !important;
+    }
+    header.home-header {
+        height: 72%;
+    }
+    .h-banner figure {
+        margin-top: 65px;
+        width: 140px;
+    }
+    .h-banner h2,
+    .home-01 h2 {
+        font-size: 25px;
+    }
+    .h-banner p {
+        font-size: 14px;
+        line-height: 22px;
+        width: 40%;
+    }
+    nav ul li {
+        font-size: 14px;
+    }
+    nav ul li a {
+        margin: 0 15px;
+    }
+    .home-01 .text1 {
+        background: hsl(217, 66%, 16%) none repeat scroll 0 0;
+        color: hsl(0, 0%, 100%);
+        left: 0;
+        padding: 22px 15px 10px;
+        position: absolute;
+        width: 48%;
+    }
+    .home-01 .text1 p {
+        font-size: 15px !important;
+        line-height: 24px;
+        margin: 0 0 20px;
+    }
+    .white-btn {
+        padding: 8px 30px;
+    }
+    .home-01 .btn-box {
+        margin: 12px 0 0;
+    }
+    .home-01 {
+        overflow: hidden !important;
+    }
+    .home-01 .block-3 {
+        bottom: 59%;
+        top: inherit;
+    }
+    .home-01 .img3 img {
+        height: auto;
+    }
+    .home-01 p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 0 5px;
+    }
+    .home-01 h2 {
+        font-size: 25px;
+        margin: 25px 0 15px;
+        padding: 10px 50px;
+    }
+    .menu1 {
+        float: left;
+        margin-right: 50px;
+        width: 20%;
+    }
+    .menu2 {
+        float: left;
+        width: 23%;
+    }
+    .menu3 {
+        float: left;
+        margin-right: 40px;
+        width: 25%;
+    }
+    .menu4 {
+        float: right;
+        width: 21%;
+    }
+    ul.social li a {
+        margin: 0 5px 0 0;
+    }
+    .menu1 p {
+        font-size: 15px;
+    }
+    .h-blog figure {
+        float: left;
+        width: 45%;
+    }
+    .h-blog h3::before {
+        height: 65px;
+        line-height: 65px;
+        width: 65px;
+    }
+    .h-blog h3 {
+        font-size: 18px;
+    }
+    .h-blog .text {
+        padding: 20px 15px;
+        width: 60%;
+    }
+    .pro-box h3 {
+        margin: 0 0 20px;
+        min-height: 55px;
+    }
+    .carousel-control {
+        z-index: 100;
+    }
+    .about-03 h3 {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 0 0 35px;
+    }
+    .about-02 {
+        margin: 40px 0;
+    }
+    .about-03 ul li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .about-03 ul li::before {
+        margin-top: 9px;
+    }
+    .about-03 {
+        padding-bottom: 40px;
+    }
+    .faq h2 {
+        font-size: 22px;
+    }
+    .prdct_tbl th,
+    .prdct_tbl td {
+        font-size: 14px;
+    }
+    .projects .overlay {
+        padding: 0 15px;
+    }
+    .about ul {
+        overflow: hidden;
+    }
+    .about ul li {
+        color: hsl(0, 0%, 12%);
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        line-height: 26px;
+    }
+    .about .tab-content ul li::before {
+        margin: 11px 10px 0 -14px;
+        position: absolute;
+    }
+    .about-03 ul li::before {
+        position: absolute;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    p {
+        font-size: 14px !important;
+        line-height: 22px !important;
+    }
+    header.home-header {
+        height: 42%;
+    }
+    .h-banner figure {
+        margin-top: 43px;
+        width: 140px;
+    }
+    .h-banner h2,
+    .home-01 h2 {
+        font-size: 25px;
+    }
+    .h-banner p {
+        font-size: 14px;
+        line-height: 22px;
+        width: 52%;
+    }
+    nav ul li {
+        font-size: 13px;
+    }
+    nav ul li a {
+        margin: 0 10px;
+    }
+    nav {
+        float: right;
+        margin: 10px 0;
+    }
+    nav ul li a.get-quote {
+        padding: 10px 14px;
+    }
+    .home-01 .text1 {
+        background: hsl(217, 66%, 16%) none repeat scroll 0 0;
+        color: hsl(0, 0%, 100%);
+        left: 0;
+        padding: 22px 15px 10px;
+        position: absolute;
+        width: 70%;
+    }
+    .home-01 .text1 p {
+        font-size: 12px !important;
+        line-height: 24px;
+        margin: 0 0 20px;
+    }
+    .white-btn {
+        padding: 5px 30px;
+        font-size: 14px;
+    }
+    .home-01 .btn-box {
+        margin: 12px 0 0;
+    }
+    .home-01 {
+        overflow: hidden !important;
+    }
+    .home-01 .block-3 {
+        bottom: 64%;
+        top: inherit;
+    }
+    .home-01 .img3 img {
+        height: auto;
+    }
+    .home-01 p {
+        font-size: 12px !important;
+        line-height: 16px !important;
+        margin: 0 0 5px;
+        letter-spacing: 0;
+    }
+    .home-01 h2 {
+        font-size: 18px;
+        margin: 25px 0 15px;
+        padding: 5px 50px;
+    }
+    .menu1 {
+        float: left;
+        margin-right: 50px;
+        width: 20%;
+    }
+    .menu2 {
+        float: left;
+        width: 23%;
+    }
+    .menu3 {
+        float: left;
+        margin-right: 25px;
+        width: 25%;
+    }
+    .menu4 {
+        float: right;
+        width: 21%;
+    }
+    ul.social li a {
+        margin: 0;
+    }
+    .menu1 p {
+        font-size: 15px;
+    }
+    .h-blog figure {
+        float: left;
+        width: 50%;
+    }
+    .h-blog h3::before {
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        width: 35px;
+        font-size: 48px;
+        text-align: center;
+        padding: 0;
+    }
+    .h-blog h3 {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .h-blog .text {
+        padding: 20px 15px;
+        width: 75%;
+        margin: -32px 0 0 80px;
+    }
+    .pro-box h3 {
+        margin: 0 0 20px;
+        min-height: 55px;
+    }
+    .carousel-control {
+        z-index: 100;
+    }
+    .about-03 h3 {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 0 0 35px;
+    }
+    .about-02 {
+        margin: 40px 0;
+    }
+    .about-03 ul li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .about-03 ul li::before {
+        margin-top: 9px;
+    }
+    .about-03 {
+        padding-bottom: 40px;
+    }
+    .faq h2 {
+        font-size: 22px;
+    }
+    .prdct_tbl th,
+    .prdct_tbl td {
+        font-size: 14px;
+    }
+    .content-box .col-sm-5 {
+        padding: 0;
+    }
+    .home-02 h2 {
+        font-size: 30px;
+        margin-bottom: 55px;
+    }
+    .home-02 h2 strong {
+        font-size: 24px;
+    }
+    .newsletter-sub input.cls_submit_btn {
+        font-size: 15px;
+        padding: 15px 24px;
+    }
+    .pro-box .blue {
+        padding: 23px 15px 25px;
+    }
+    .home-02 {
+        padding: 52px 0;
+    }
+    .view-btn {
+        margin-top: 10px;
+    }
+    .pro-box {
+        margin: 0;
+    }
+    .pro-box h3 {
+        font-size: 20px;
+    }
+    .newsletter-sub input {
+        font-size: 14px;
+        letter-spacing: 0;
+        padding: 15px 125px 15px 18px;
+    }
+    .about ul {
+        overflow: hidden;
+    }
+    .about ul li {
+        color: hsl(0, 0%, 12%);
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        line-height: 26px;
+    }
+    .about .tab-content ul li::before {
+        margin: 11px 10px 0 -14px;
+        position: absolute;
+    }
+    .about-02 h2 {
+        font-size: 30px;
+    }
+    .about-02 {
+        padding: 75px 0 70px;
+    }
+    .about-03 ul li::before {
+        position: absolute;
+    }
+    .dtl_prdct {
+        margin: 20px 0 0;
+        padding: 0;
+    }
+    .recent-posts a {
+        clear: both;
+        display: block;
+        margin: 0 0 10px;
+    }
+    .recent-posts figure {
+        float: left;
+        margin: 0 10px 18px 0;
+        width: 50px;
+    }
+    .recent-posts h4,
+    .b-categories ul li a {
+        font-size: 14px;
+    }
+    .search-box input {
+        font-size: 12px;
+        letter-spacing: 0;
+        padding: 9px 35px 9px 5px;
+    }
+    #loader {
+        bottom: 75px;
+    }
+}
+
+@media (max-width:767px) {
+    p {
+        font-size: 12px !important;
+        line-height: 18px !important;
+    }
+    header nav {
+        display: none;
+    }
+    #responsive-menu li:last-child {
+        display: none;
+    }
+    button#responsive-menu-button,
+    button#responsive-menu-button:hover,
+    button#responsive-menu-button:focus {
+        background: none;
+    }
+    .carousel .container {
+        left: 10px;
+        position: absolute;
+        top: 50%;
+        width: 235px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    }
+    .h-banner figure {
+        margin-top: 0;
+        width: 80px;
+    }
+    .h-banner h2 {
+        font-size: 14px;
+        margin: -10px 0 0;
+        padding: 10px 0;
+    }
+    .h-banner p {
+        display: none;
+    }
+    header.home-header {
+        height: 80%;
+    }
+    .blue-bar {
+        display: none;
+    }
+    .home-01 .img1 {
+        width: 100%;
+    }
+    .home-01 .content-box {
+        height: 100%;
+        position: inherit;
+        width: 100%;
+    }
+    .home-01 h2 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin: 15px 0;
+        padding: 10px 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .home-01 p {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0 0 15px;
+    }
+    .home-01 .btn-box {
+        margin: 0 0 20px;
+        text-align: right;
+    }
+    .home-01 .btn-box a {
+        margin: 0;
+    }
+    .white-btn {
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding: 8px 30px;
+    }
+    .home-01 .img2 {
+        width: 100%;
+    }
+    .home-01 .img3 {
+        width: 100%;
+    }
+    .home-01 .block-3 {
+        position: inherit;
+        width: 100%;
+    }
+    .home-01 .text1 {
+        background: rgba(14, 35, 69, 0.5) none repeat scroll 0 0;
+        padding: 40px 15px 30px;
+        position: absolute;
+        width: 100%;
+    }
+    .home-01 .text1 p {
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin: 0 0 10px;
+    }
+    .home-02 {
+        padding: 25px 0;
+    }
+    .home-02 h2 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin: 0 auto 35px;
+        padding: 15px 10px 26px;
+    }
+    .home-02 h2 strong {
+        font-size: 14px;
+    }
+    .pro-box h3 {
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        margin: 0 0 15px;
+    }
+    .pro-box {
+        margin: 0 0 25px;
+    }
+    .pro-box .blue {
+        position: inherit;
+    }
+    .view-btn,
+    .projects a.view-more {
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 15px 0 0;
+        padding: 8px 65px;
+    }
+    .home-03 h2,
+    .home-04 h2 {
+        font-size: 15px;
+        margin: 0 auto 35px;
+        padding: 10px 10px 0;
+    }
+    .home-03 {
+        padding: 25px 0 0;
+    }
+    .projects h3 {
+        font-size: 14px;
+    }
+    .projects h4 {
+        font-size: 20px;
+    }
+    .home-04 {
+        padding: 25px 0 20px;
+    }
+    .h-blog .text {
+        padding: 24px 15px;
+        width: 100%;
+        margin: 0;
+    }
+    .h-blog h3 {
+        font-size: 14px;
+        padding: 0;
+        line-height: 40px;
+    }
+    .h-blog h3::before {
+        font-size: 54px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 15px 0 0;
+        padding: 0;
+        text-align: center;
+        width: 40px;
+    }
+    .home-04 .view {
+        font-size: 14px;
+        margin: 10px 0 0;
+    }
+    .newsletter-sub h2 {
+        font-size: 15px;
+    }
+    .newsletter-sub input {
+        font-size: 12px;
+        padding: 12px 135px 12px 18px;
+    }
+    .newsletter-sub input.cls_submit_btn {
+        font-size: 13px;
+        padding: 12px 30px;
+    }
+    .newsletter-inner {
+        padding: 20px 0 5px;
+    }
+    .menu1,
+    .menu2,
+    .menu3,
+    .menu4 {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .menu3 .phone::before,
+    .menu3 .address::before,
+    .menu3 .f-email::before {
+        margin-left: 0;
+    }
+    footer {
+        padding: 25px 0 0;
+    }
+    footer h4 {
+        margin: 0 0 15px;
+    }
+    .menu2 ul li a {
+        font-size: 12px;
+        margin: 0 0 5px;
+    }
+    .menu3 p,
+    .menu3 a {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 0 0 5px;
+    }
+    .menu4 figure {
+        margin: 0 0 20px;
+        width: 120px;
+    }
+    .menu4 {
+        margin: 0;
+    }
+    .products .banner .heading {
+        padding: 10px 0;
+    }
+    .heading h1 {
+        font-size: 18px;
+        margin: 0 0 10px;
+        padding: 0 0 10px;
+    }
+    .banner > img {
+        height: 284px;
+        width: 100%;
+    }
+    .pro-content {
+        padding: 25px 0;
+    }
+    .nav-tabs > li > a {
+        font-size: 14px;
+    }
+    .pro-tabs .nav-tabs {
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+    .nav-tabs > li {
+        display: inline-block;
+        float: none;
+    }
+    .item-box > ul > li a {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+    .item-box {
+        min-height: 325px;
+    }
+    button#responsive-menu-button {
+        right: 0;
+        top: 0;
+        background: rgba(14, 35, 69, 0.7) none repeat scroll 0 0 !important;
+        width: 100% !important;
+        height: 40px;
+    }
+    button.move_scroll {}
+    button .responsive-menu-box {
+        right: -41%;
+    }
+    #responsive-menu-container {
+        z-index: 99999;
+    }
+    .pro-box figure img {
+        width: 100%;
+    }
+    .item-box h2 {
+        font-size: 15px;
+    }
+    .about h1,
+    .product_description h1,
+    .faq h1,
+    .blog h1,
+    .contact h1 {
+        font-size: 15px;
+        margin: 0 auto 35px;
+        padding: 5px 10px 0;
+    }
+    .about .tabs-left {
+        margin: 25px 0 0;
+    }
+    .tabs-left > .nav-tabs {
+        border-right: 0 none;
+        margin-right: 0;
+    }
+    .about ul li {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 0 0 8px;
+        padding: 0 0 0 12px;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-tabs > li {
+        border-bottom: 1px solid #d5d5d5;
+    }
+    .nav-tabs > li > a {
+        font-size: 14px;
+        border: 0 none;
+        padding: 0 20px;
+        text-align: center !important;
+    }
+    .about .tab-content ul li::before {
+        left: 0;
+        margin: 8px 10px 0 0;
+        position: absolute;
+    }
+    .about-img {
+        margin-top: 22px;
+    }
+    .tabs-left .nav-tabs > li.active > a,
+    .tabs-left .nav-tabs > li.active > a:focus,
+    .tabs-left .nav-tabs > li.active > a:hover {
+        border: 0 none;
+    }
+    .about-02 {
+        margin: 45px 0;
+        padding: 40px 0 35px;
+    }
+    .about-02 h2 {
+        font-size: 15px;
+    }
+    .about-02 figure::before,
+    .about-02 figure::after {
+        width: 65px;
+    }
+    .about-02 a,
+    .blue-btn {
+        font-size: 13px;
+        padding: 10px 30px;
+    }
+    .about-03 h3 {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 15px;
+    }
+    .about-left {
+        width: 100%;
+    }
+    .about-left ul li {
+        border: 0 none !important;
+    }
+    .about-right {
+        margin: 25px 0 0;
+        width: 100%;
+    }
+    .about-03 ul li::before {
+        margin-top: 8px;
+    }
+    .pro-tabs .nav-tabs > li.active > a,
+    .pro-tabs .nav-tabs > li.active > a:focus,
+    .pro-tabs .nav-tabs > li.active > a:hover {
+        border: 0 none;
+    }
+    .nav-tabs,
+    .pro-tabs .nav-tabs > li > a,
+    .pro-tabs .nav-tabs > li > a:hover,
+    .pro-tabs .nav-tabs > li > a:focus {
+        border: 0 none;
+        padding: 10px 5px;
+    }
+    .pro-tabs.nav-tabs > li.active > a,
+    .pro-tabs .nav-tabs > li.active > a:hover,
+    .pro-tabs .nav-tabs > li.active > a:focus {
+        background: #283b59;
+        color: #fff !important;
+    }
+    .product_des_box ul li {
+        margin: 0 0 25px;
+        width: 100%;
+    }
+    .main_prdct_heading h3 {
+        font-size: 15px;
+    }
+    .product_des_box {
+        margin-bottom: 15px;
+    }
+    .faq h2 {
+        font-size: 14px;
+    }
+    .faq h2:before {
+        width: 2px;
+        top: 2px;
+    }
+    .faq p {
+        margin: 0 0 20px 21px;
+    }
+    .faq,
+    .blog,
+    .contact,
+    .product_description {
+        padding: 70px 0 20px;
+    }
+    .blog ul {
+        padding: 0 10px;
+    }
+    .blog ul li {
+        float: left;
+        margin: 0 0 5px;
+        width: 100%;
+    }
+    .recent-posts h4 {
+        font-size: 12px;
+    }
+    .blog-post h2,
+    .blog-post h4,
+    .recent-posts h3 {
+        font-size: 14px;
+    }
+    .blog-left .btn-box {
+        float: none;
+        padding: 20px 0 50px;
+        text-align: center;
+    }
+    .blog-sidebar {
+        padding: 0 10px;
+    }
+    .search-box {
+        margin-bottom: 15px;
+    }
+    .b-categories ul li a {
+        font-size: 12px;
+    }
+    .b-categories ul li a:before {
+        font-size: 14px;
+    }
+    #loader {
+        bottom: 10px;
+    }
+    .contact-form input.input-text {
+        height: 30px;
+    }
+    .contact-form label {
+        font-size: 14px;
+    }
+    .contact-form p.col-sm-4 {
+        padding-right: 15px;
+    }
+    .mail {
+        float: left;
+        width: 100%;
+    }
+    .contact h3 {
+        font-size: 14px;
+    }
+    .contact h3 i {
+        font-size: 14px;
+    }
+    .contact .number {
+        text-align: left;
+        margin: 20px 0;
+        width: 100%;
+        border-top: 1px solid #a3a3a3;
+        border-bottom: 1px solid #a3a3a3;
+        border-left: 0 none;
+        border-right: 0 none;
+        padding: 20px 0;
+    }
+    .contact .detail p,
+    .contact .detail a {
+        font-size: 13px;
+    }
+    .mail {
+        float: left;
+        width: 100%;
+    }
+    .mail .pull-right {
+        float: left !important;
+    }
+    .contact .mail i {
+        font-size: 12px;
+    }
+    .contact-form textarea {
+        height: 85px;
+    }
+    .contact-form input[type="submit"] {
+        font-size: 12px;
+        margin: 20px auto 40px;
+        padding: 10px 55px;
+        display: block;
+    }
+    .acf-map {
+        height: 125px !important;
+    }
+    .contact .detail {
+        margin: 35px 0 0;
+        overflow: hidden;
+    }
+    .view_dtl_btn {
+        font-size: 12px;
+    }
+    .img_prdct {
+        min-height: 150px;
+    }
+    .dtl_prdct {
+        padding: 0;
+        margin: 20px 0 0;
+    }
+    .prdct_tbl th,
+    .prdct_tbl td {
+        font-size: 12px;
+    }
+    .fld label {
+        font-size: 12px;
+    }
+    .fld > input {
+        height: 30px;
+    }
+    .fld {
+        margin: 0 0px 0 0;
+        width: 100%;
+    }
+    .rght_part a {
+        margin: 20px auto 0;
+        font-size: 12px;
+    }
+    .options .rght_part {
+        float: none;
+        display: block;
+        overflow: hidden;
+        clear: both;
+    }
+    .related_products h2,
+    .dtl_prdct h2,
+    .back_to_product {
+        font-size: 14px;
+    }
+    .outer_div {
+        margin: 0 0 15px;
+    }
+    .single_product {
+        margin: 25px 0 0;
+    }
+    .detail_product {
+        padding-bottom: 20px;
+    }
+    #myModal .modal-dialog {
+        margin: 90px auto;
+        width: 90%;
+    }
+    #myModal h4 {
+        font-size: 18px;
+    }
+    #myModal .modal-body {
+        padding: 0 15px 10px;
+    }
+    #myModal .modal-body label {
+        width: 100%;
+        margin: 5px 0 5px;
+    }
+    #myModal .modal-body input[type="text"],
+    #myModal .modal-body input[type="email"] {
+        height: 30px;
+    }
+    #myModal .modal-body input[type="submit"] {
+        font-size: 12px;
+        height: 35px;
+    }
+}
+
+@media (max-width:414px) {
+    header.home-header {
+        height: 30%;
+    }
+    .carousel .container {
+        transform: translateY(-27%);
+        -webkit-transform: translateY(-27%);
+        -moz-transform: translateY(-27%);
+        -ms-transform: translateY(-27%);
     }
 }

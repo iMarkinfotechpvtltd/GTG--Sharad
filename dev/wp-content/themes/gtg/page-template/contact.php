@@ -77,8 +77,8 @@
                         <div class="mail">
                             <div class="pull-right">
                                 <h3><i class="fa fa-envelope"></i>Email</h3>
-                                <a href="mailto:info@gtg.com"><?php echo get_option_tree('contact_email');?></a>
-                                <a href="mailto:gtg@gtgcreations.com"><?php echo get_option_tree('contact_email_2');?></a>
+                                <a href="mailto:<?php echo get_option_tree('contact_email');?>"><?php echo get_option_tree('contact_email');?></a>
+                                <a href="mailto:<?php echo get_option_tree('contact_email_2');?>"><?php echo get_option_tree('contact_email_2');?></a>
                             </div>
                         </div>
                     </div>
